@@ -9,6 +9,9 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+
+    <script src="//use.typekit.net/gbd2brz.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
     
     <?php wp_head(); ?>
 </head>
