@@ -97,6 +97,13 @@ if ( function_exists( 'add_theme_support' ) ) {
 
 
 /**
+ * Add custom content types
+ */
+
+require_once('post-types/team-members.php');
+
+
+/**
  * Custom editor styles
  */
 
@@ -143,7 +150,6 @@ function greenwichmarketinggroup_before_init_insert_formats( $init_array ) {
 } 
 // Attach callback to 'tiny_mce_before_init' 
 add_filter( 'tiny_mce_before_init', 'greenwichmarketinggroup_before_init_insert_formats' );  
-
 
 
 ?>
