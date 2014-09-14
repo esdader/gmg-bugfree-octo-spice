@@ -96,4 +96,54 @@ if ( function_exists( 'add_theme_support' ) ) {
 // }
 
 
+/**
+ * Custom editor styles
+ */
+
+function greenwichmarketinggroup_add_editor_styles() {
+    add_editor_style( 'css/custom-editor-style.css' );
+}
+add_action( 'after_setup_theme', 'greenwichmarketinggroup_add_editor_styles' );
+
+
+/**
+ * Add button for custom styles in editor
+ */
+
+// Callback function to insert 'styleselect' into the $buttons array
+function greenwichmarketinggroup_buttons_2( $buttons ) {
+	array_unshift( $buttons, 'styleselect' );
+	return $buttons;
+}
+// Register our callback to the appropriate filter
+add_filter('mce_buttons_2', 'greenwichmarketinggroup_buttons_2');
+
+
+/**
+ * Add custom buttons to style copy in editor
+ */
+// Callback function to filter the MCE settings
+function greenwichmarketinggroup_before_init_insert_formats( $init_array ) {  
+	// Define the style_formats array
+	$style_formats = array(  
+		// Each array child is a format with it's own settings
+		array(  
+			'title' => 'Blue Hightlighted Text',  
+			'inline' => 'span',  
+			'classes' => 'gmg-em-text',
+			'wrapper' => false,
+			
+		),  
+	);  
+	// Insert the array, JSON ENCODED, into 'style_formats'
+	$init_array['style_formats'] = json_encode( $style_formats );  
+	
+	return $init_array;  
+  
+} 
+// Attach callback to 'tiny_mce_before_init' 
+add_filter( 'tiny_mce_before_init', 'greenwichmarketinggroup_before_init_insert_formats' );  
+
+
+
 ?>
