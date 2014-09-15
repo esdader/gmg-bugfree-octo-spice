@@ -60,6 +60,13 @@ function starter_theme_scripts() {
 
 if ( !is_admin() ) add_action( 'wp_enqueue_scripts', 'starter_theme_scripts' );
 
+
+add_action( 'admin_head' , 'add_museo_sans' );
+function add_museo_sans() { ?>
+	<script src="//use.typekit.net/gbd2brz.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+<?php }
+
 /**
  * Add support for menus
  */
