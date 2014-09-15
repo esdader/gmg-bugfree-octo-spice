@@ -6,6 +6,25 @@
  * Dimensions
  */
 
+ $max-width: 1124;
+ $max-width-px: 1124px;
+
+
+/**
+* functions
+*/
+
+$browser-context: 16;
+
+@function em($pixels, $context: $browser-context) {
+@return #{$pixels/$context}em;
+}
+
+@function per($px, $context-width: $max-width) {
+	@return $px / $context-width * 100%;
+}
+
+
 /**
  * colors
  */
