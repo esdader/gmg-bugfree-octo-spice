@@ -6,8 +6,8 @@
  * Dimensions
  */
 
- $max-width: 1124;
- $max-width-px: 1124px;
+ $site-max-width: 1124;
+ $site-max-width-px: 1124px;
 
 
 /**
@@ -20,7 +20,7 @@ $browser-context: 16;
 @return #{$pixels/$context}em;
 }
 
-@function per($px, $context-width: $max-width) {
+@function per($px, $context-width: $site-max-width) {
 	@return $px / $context-width * 100%;
 }
 
@@ -64,4 +64,9 @@ $w-light: $font-weight-light;
 body {
 	font-family: $font-family;
 	font-weight: $w-light;
+	color: $body-blue;
+}
+
+hr {
+	border-color: $body-blue;
 }
