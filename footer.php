@@ -1,3 +1,8 @@
+<footer class="main-footer">
+	<p>
+		&copy; <?php echo date('Y'); ?> Greenwich Marketing Group <span class="divider">|</span> The Unrelenting Champions of Brands, GMG, and the GMG Dot Logo are service marks of Greenwich Marketing Group.
+	</p>
+</footer>
 </div> <!-- end l-container -->
     <?php wp_footer(); ?>
     
