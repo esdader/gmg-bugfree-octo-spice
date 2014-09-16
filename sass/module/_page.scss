@@ -2,10 +2,13 @@
  * General Page Styles
  */
 
-p,
-li,
-blockquote {
-	font-size: em(35);
+.copy-panel {
+	p,
+	li,
+	blockquote {
+		font-size: em(35);
+		line-height: 1.2;
+	}
 }
 
 
