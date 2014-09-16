@@ -2,9 +2,20 @@
  * General Page Styles
  */
 
+/**
+ * General Content
+ */
+
+p,
+li,
+blockquote {
+	font-size: em(35);
+}
+
+
 .gmg-em-text {
 	display: block;
-	font-size: 50px;
+	font-size: em(50, 35);
 	line-height: 1.2;
 	text-transform: uppercase;
 	color: #00a3e8;

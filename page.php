@@ -3,13 +3,15 @@
 ?>
 
 <?php get_header(); ?>
+<div class="hentry">
+	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+		<article class="entry-content copy-panel">
+			<?php the_content(); ?>
+		</article>
+	<?php endwhile; ?>
 
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-	<?php the_content(); ?>
-<?php endwhile; ?>
+	<?php else: ?>
 
-<?php else: ?>
-
-<?php endif; ?>
-
+	<?php endif; ?>
+</div>
 <?php get_footer(); ?>
