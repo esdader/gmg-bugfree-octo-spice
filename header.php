@@ -8,7 +8,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title></title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width">
+    <!-- <meta name="viewport" content="width=device-width"> -->
+    <meta name="viewport" content="width=1124">
 
     <script src="//use.typekit.net/gbd2brz.js"></script>
 	<script>try{Typekit.load();}catch(e){}</script>

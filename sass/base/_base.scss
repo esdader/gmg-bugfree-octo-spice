@@ -7,7 +7,9 @@
  */
 
  $site-max-width: 1124;
- $site-max-width-px: 1124px;
+ $site-max-width-px: $site-max-width * 1px;
+ $site-interior-max-width: 1024;
+ $site-interior-max-width-px:  $site-interior-max-width * 1px;
 
 
 /**
@@ -31,6 +33,7 @@ $browser-context: 16;
 
 $blue: #00a3e8;
 $body-blue: #005d8d;
+$dark-blue: $body-blue;
 $light-gray: #d1e1e8;
 
 

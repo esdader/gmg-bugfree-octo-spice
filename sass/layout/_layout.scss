@@ -18,7 +18,52 @@
  */
 
 .l-container {
-	width: $site-max-width;
+	width: $site-max-width-px;
+	// max-width: $site-max-width-px;
 	padding: 0 per(50);
 	margin: 0 auto;
+}
+
+
+
+
+/**
+ * Main Header / Main Nav
+ */
+
+.l-main-header {
+	padding-top: 1em;
+}
+
+$nav-width: 662;
+
+.l-main-nav {
+	display: block;
+	float: left;
+	width: per($nav-width, $site-interior-max-width);
+	padding-top: em(20);
+
+	li {
+		display: block;
+		width: per(116, $nav-width);
+	}
+}
+
+.l-clients,
+.l-team {
+	margin-right: per(40, $nav-width);
+}
+
+.l-clients,
+.l-expertise {
+	text-align: center;
+}
+
+.l-team,
+.l-contact {
+	text-align: right;
+}
+
+.l-logo-con {
+	float: right;
 }

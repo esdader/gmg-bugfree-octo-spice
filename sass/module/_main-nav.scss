@@ -1,0 +1,26 @@
+/**
+ * Main Nav
+ */
+
+.main-nav {
+
+	li {
+	
+	}
+
+	a {
+
+		padding-bottom: 1px;
+		font-size: em(14);
+		font-weight: $font-weight-medium;
+		color: $dark-blue;
+	 	text-decoration: none;
+	 	border-bottom: 6px solid transparent;
+		letter-spacing: 1px;
+		line-height: 1;
+
+	 	&:hover {
+	 		border-color: $blue;
+	 	}
+	}
+}
