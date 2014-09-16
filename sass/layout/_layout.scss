@@ -68,3 +68,17 @@ $nav-width: 662;
 .l-logo-con {
 	float: right;
 }
+
+/**
+ * homepage
+ */
+
+.l-welcome-panel {
+	padding-bottom: 1em;
+	text-align: center;
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+}
