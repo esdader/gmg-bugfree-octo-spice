@@ -71,6 +71,11 @@ body {
 	color: $body-blue;
 }
 
+p {
+	margin: 0 0 2em;
+}
+
 hr {
 	border-color: $body-blue;
+	margin: -.5em 0 2em;
 }
