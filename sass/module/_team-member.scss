@@ -1,3 +1,32 @@
 /**
  * Team Member
  */
+
+ .bio-title {
+ 	margin: 0;
+ 	padding: 0;
+ 	font-size: em(35);
+ 	color: $blue;
+ 	font-weight: $font-weight-light;
+ 	line-height: (42 / 35);
+ 	text-align: left;
+ }
+
+ .bio-content {
+ 	margin-top: .5em;
+	text-align: left;
+	font-size: em(18);
+	color: #000;
+	line-height: (21.6 / 18);
+
+	p,
+	li,
+	blockquote {
+		margin-bottom: 1.25em;
+	}
+ }
+
+ .bio-article {
+ 	margin-top: 3em;
+ 	padding-bottom: 2em;
+ }

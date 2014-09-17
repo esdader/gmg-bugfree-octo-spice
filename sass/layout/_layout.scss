@@ -20,7 +20,7 @@
 .l-container {
 	width: $site-max-width-px;
 	// max-width: $site-max-width-px;
-	padding: 0 per(50);
+	padding: 0 50px;
 	margin: 0 auto;
 }
 
@@ -126,3 +126,17 @@ $nav-width: 662;
 		background-color: $blue;
 	}
 }
+
+/**
+ * bio pgae
+ */
+
+ .l-title-col {
+ 	float: left;
+ 	width: per(377, $site-interior-max-width);
+ }
+
+ .l-bio-col {
+ 	float: right;
+ 	width: per(610, $site-interior-max-width);
+ }
