@@ -1,0 +1,43 @@
+/**
+ * Contact
+ */
+
+.contact-page-title {
+	font-size: em(50);
+	line-height: 1;
+	color: $blue;
+	font-weight: $font-weight-light;
+	margin: 0 0 .5em;
+}
+
+.contact-details {
+	font-size: em(50);
+	line-height: 1;
+	color: $dark-blue;
+	font-weight: $font-weight-light;
+	margin: 0 0 .5em;
+
+	a {
+		color: $dark-blue;
+		text-decoration: none;
+
+		&:hover {
+			color: $blue;
+		}
+	}
+}
+
+.the-quote {
+	font-size: em(35);
+	line-height: (42/ 35);
+
+	p {
+		margin-bottom: 1em;
+	}
+}
+
+.attributor-details {
+	font-size: em(35);
+	line-height: (42/ 35);
+	color: $blue;
+}

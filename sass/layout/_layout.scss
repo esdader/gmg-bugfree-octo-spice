@@ -140,3 +140,16 @@ $nav-width: 662;
  	float: right;
  	width: per(610, $site-interior-max-width);
  }
+
+ /**
+  * Contact page
+  */
+
+ .l-contact-page {
+ 	padding-top: 1em;
+ 	padding-bottom: 1em;
+ }
+
+ .l-client-quote {
+ 	padding: 1em per(170, $site-interior-max-width) 2em per(120, $site-interior-max-width);
+ }
