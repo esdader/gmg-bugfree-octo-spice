@@ -21,7 +21,8 @@ get_header();
 			 if ( $team->have_posts() ) : while ( $team->have_posts() ) : $team->the_post(); ?>
 				<li>
 					<a href="<?php the_permalink(); ?>">
-						<?php the_title(); ?>
+						<?php the_field('name_line_one'); ?><br>
+						<?php the_field('name_line_two'); ?>
 					</a>
 				</li>
 			<?php endwhile; ?>
