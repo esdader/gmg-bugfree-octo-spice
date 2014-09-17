@@ -82,3 +82,47 @@ $nav-width: 662;
 		height: auto;
 	}
 }
+
+/**
+ * Team page
+ */
+.l-team-container {
+	padding-bottom: 16em;
+}
+
+.l-team-holder {
+	padding-top: 1em;
+	text-align: center;
+}
+
+.l-team-list {
+	display: inline-block;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+
+	li {
+		float: left;
+		margin: 0 8px;
+		display: block;
+		width: 250px;
+		height: 250px;
+		border-radius: 50%;
+		background-color: $blue;
+
+		transition: background-color 200ms ease;
+
+		&:hover {
+			background-color: $light-gray;
+		}
+	}
+}
+
+.inverse .l-team-list li {
+	background-color: $light-gray;
+
+	&:hover,
+	&.active {
+		background-color: $blue;
+	}
+}
