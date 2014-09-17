@@ -9,10 +9,12 @@ function team_members_init() {
 		'supports'          => array( 'title', 'editor' ),
 		'has_archive'       => true,
 		'query_var'         => true,
-		'rewrite'           => true,
+		'rewrite'           => array(
+			'slug'          	=> 'team'
+		),
 		'labels'            => array(
 			'name'                => __( 'Team members', 'greenwichmarketinggroup' ),
-			'singular_name'       => __( 'Team members', 'greenwichmarketinggroup' ),
+			'singular_name'       => __( 'Team member', 'greenwichmarketinggroup' ),
 			'all_items'           => __( 'Team members', 'greenwichmarketinggroup' ),
 			'new_item'            => __( 'New team member', 'greenwichmarketinggroup' ),
 			'add_new'             => __( 'Add New', 'greenwichmarketinggroup' ),
